@@ -124,7 +124,7 @@ VIII. Online Appendix
 | Module Names | Descriptions |
 |:------------|:----------|
 | Check Identifiers | Check if all identifiers can be found in the space of syntactic constraints. |
-| Check Method Param. | Check if the number and types of method params are consistent with the declaration. |
+| Check Method Param. | Check if the types of method params are consistent with the declaration. |
 | Check Binary Operations | Check if the operands in binary expressions satisfy the type restrictions. |
 | Check Unary Operations | Check if the operand in unary expressions satisfy the type restrictions. |
 | Check Array Indices | Check if the index of an array is a non-negative integer. |
