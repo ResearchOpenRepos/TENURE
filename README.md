@@ -69,22 +69,33 @@ IV. Prepare Defects4J Dataset
 V. Perform Repair Experiments with Already Trained Models
  --------------------------
 1. Edit the confiauration of the experiments if you want. 
+
+```
         <d4j_version>: v1 or v2
         <dl_setting>: perfect or ochiai
         <bug_version>: a bug from Defects4J-v1.2 or Defects4J-v2.0 (e.g., Chart_1)
         <beam_all>: the number of reserved patch IRs from 35 artificial fix templates and 1 single-line fix template (default: 500 for perfect and 200 for ochiai)
         <beam_35>: the number of reserved patch IRs from 35 artificial fix template (default: 300 for perfect and 120 for ochiai)
         <beam_single>: the number of reserved patch IRs from the single-line fix template (default: 120 for perfect and 80 for ochiai)
+```
     
-2. Enter the path `./projects/d4j_<d4j_version>/` and checkout the corresponidng bug version (e.g. Chart_1) in Defects4J-v1.2 or Defects4J-v2.0 (use Java JDK 1.7 or 1.8). 
+2. Enter the path `./projects/d4j_<d4j_version>/` and checkout the corresponidng bug version (e.g. Chart_1) in Defects4J-v1.2 or Defects4J-v2.0 (use Java JDK 1.7 or 1.8).
+``` 
         e.g. defects4j checkout -p Chart -v 1b -w ./Chart_1
+```
 3. Execute `data_process.jar` (must use Java JDK 11).
+```
         cd ./scripts/ && java -jar data_process.jar
+```
 4. Execute `run.py` (use Java JDK 1.7 or 1.8).
+```
         cd ./scripts/ && python3 run.py
+```
 5. See the repair results in `./patch_validation/patches/` and the repair log in `./patch_validation/log/`.
+```
         ./patch_validation/patches/all/: including the patches that can pass all test cases.
         ./patch_validation/patches/partial/: including the patches that can pass part of the test cases.
+```
 6. Manual check for these patches to judge if they are semantically correct.
 
 
@@ -92,11 +103,15 @@ VI. Train New Models to Perform Repair Experiments
 ---------------------------
 If you want to train new models for repair experiments, the following steps can help:
 1. Use the configuration files in `./nmt_model/origin_onmt/train/` for model training.
+```
         Vocabulary construction (e.g.): cd ./nmt_model/origin_onmt/ && python3 build_vocab.py -config ./train/config-copy-35.yaml -n_samples -1
         Model Training (e.g.): cd ./nmt_model/origin_onmt/ && python3 train.py -config ./train/config-copy-35.yaml
+```
 
 2. Select a new model checkpoint to replace the original one procided by us.
+```
         (e.g.) cd ./nmt_model/origin_onmt/check_point/copy_35/ && mv model_step_200000.pt saved_model.pt
+```
         
 3. Execute all the commands in Section V.
 
@@ -109,17 +124,17 @@ VIII. Online Appendix
 | Module Names | Descriptions |
 |:------------|:----------|
 | Check Identifiers | Check if all identifiers can be found in the space of syntactic constraints. |
-| Check Method Parameters | Check if the number and the types of method parameters are consistent with the method declaration. |
-| Check Binary Operations | Check if both operands in a binary expression satisfy the type requirements of the operator. |
-| Check Unary Operations | Check if the operand in an unary expression satisfy the type requirements of the operator. |
+| Check Method Parameters | Check if the number and types of method params are consistent with the declaration. |
+| Check Binary Operations | Check if the operands in binary expressions satisfy the type restrictions. |
+| Check Unary Operations | Check if the operand in unary expressions satisfy the type restrictions. |
 | Check Array Indices | Check if the index of an array is a non-negative integer. |
 | Check Assignments | Check if the types of expressions on the left and right sides of "=" are the same. |
 | Check Continues and Breaks | Check if continue and break statements in a loop. |
 | Check Return Types | Check if the actual return type is consistent with that of method declaration. |
 | Check Basic Type References | Check if a code element of a basic type is (incorrectly) referenced. |
 | Check Cast Types | Check if the identifier used in a cast expression is a class name. |
-| Check Conditional Expressions | Check if the condition in if, while, for and do statement is a boolean type expression. |
-| Check Unreachable Statements | Check if there is a statement that can never be reached (such as directly after a return statement). |
+| Check Conditional Expressions | Check if the condition is a boolean type expression. |
+| Check Unreachable Statements | Check if there is a statement that can never be reached. |
 
 
 ### 2. The contribution of each fix template to the repair results in Defects4J-v1.2
