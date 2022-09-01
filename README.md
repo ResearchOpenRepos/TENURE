@@ -71,30 +71,30 @@ V. Perform Repair Experiments with Already Trained Models
 1. Edit the confiauration of the experiments if you want. 
 
 ```
-<d4j_version>: v1 or v2
-<dl_setting>: perfect or ochiai
-<bug_version>: a bug from Defects4J-v1.2 or Defects4J-v2.0 (e.g., Chart_1)
-<beam_all>: the number of reserved patch IRs from 35 artificial fix templates and 1 single-line fix template (default: 500 for perfect and 200 for ochiai)
-<beam_35>: the number of reserved patch IRs from 35 artificial fix template (default: 300 for perfect and 120 for ochiai)
-<beam_single>: the number of reserved patch IRs from the single-line fix template (default: 120 for perfect and 80 for ochiai)
+  <d4j_version>: v1 or v2
+  <dl_setting>: perfect or ochiai
+  <bug_version>: a bug from Defects4J-v1.2 or Defects4J-v2.0 (e.g., Chart_1)
+  <beam_all>: the number of reserved patch IRs from 35 artificial fix templates and 1 single-line fix template (default: 500 for perfect and 200 for ochiai)
+  <beam_35>: the number of reserved patch IRs from 35 artificial fix template (default: 300 for perfect and 120 for ochiai)
+  <beam_single>: the number of reserved patch IRs from the single-line fix template (default: 120 for perfect and 80 for ochiai)
 ```
     
 2. Enter the path `./projects/d4j_<d4j_version>/` and checkout the corresponidng bug version (e.g. Chart_1) in Defects4J-v1.2 or Defects4J-v2.0 (use Java JDK 1.7 or 1.8).
 ``` 
-e.g. defects4j checkout -p Chart -v 1b -w ./Chart_1
+  e.g. defects4j checkout -p Chart -v 1b -w ./Chart_1
 ```
 3. Execute `data_process.jar` (must use Java JDK 11).
 ```
-cd ./scripts/ && java -jar data_process.jar
+  cd ./scripts/ && java -jar data_process.jar
 ```
 4. Execute `run.py` (use Java JDK 1.7 or 1.8).
 ```
-cd ./scripts/ && python3 run.py
+  cd ./scripts/ && python3 run.py
 ```
 5. See the repair results in `./patch_validation/patches/` and the repair log in `./patch_validation/log/`.
 ```
-./patch_validation/patches/all/: including the patches that can pass all test cases.
-./patch_validation/patches/partial/: including the patches that can pass part of the test cases.
+  ./patch_validation/patches/all/: including the patches that can pass all test cases.
+  ./patch_validation/patches/partial/: including the patches that can pass part of the test cases.
 ```
 6. Manual check for these patches to judge if they are semantically correct.
 
@@ -104,13 +104,13 @@ VI. Train New Models to Perform Repair Experiments
 If you want to train new models for repair experiments, the following steps can help:
 1. Use the configuration files in `./nmt_model/origin_onmt/train/` for model training.
 ```
-Vocabulary construction (e.g.): cd ./nmt_model/origin_onmt/ && python3 build_vocab.py -config ./train/config-copy-35.yaml -n_samples -1
-Model Training (e.g.): cd ./nmt_model/origin_onmt/ && python3 train.py -config ./train/config-copy-35.yaml
+  Vocabulary construction (e.g.): cd ./nmt_model/origin_onmt/ && python3 build_vocab.py -config ./train/config-copy-35.yaml -n_samples -1
+  Model Training (e.g.): cd ./nmt_model/origin_onmt/ && python3 train.py -config ./train/config-copy-35.yaml
 ```
 
 2. Select a new model checkpoint to replace the original one procided by us.
 ```
-(e.g.) cd ./nmt_model/origin_onmt/check_point/copy_35/ && mv model_step_200000.pt saved_model.pt
+  (e.g.) cd ./nmt_model/origin_onmt/check_point/copy_35/ && mv model_step_200000.pt saved_model.pt
 ```
         
 3. Execute all the commands in Section V.
