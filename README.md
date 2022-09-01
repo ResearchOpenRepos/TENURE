@@ -129,7 +129,7 @@ VIII. Online Appendix
 | Check Unary Operations | Check if the operand in unary expressions satisfy the type restrictions. |
 | Check Array Indices | Check if the index of an array is a non-negative integer. |
 | Check Assignments | Check if the types of expressions on the left and right sides of "=" are the same. |
-| Check Continues and Breaks | Check if continue and break statements in a loop. |
+| Check Continues & Breaks | Check if continue and break statements in a loop. |
 | Check Return Types | Check if the actual return type is consistent with that of method declaration. |
 | Check Basic Type References | Check if a code element of a basic type is (incorrectly) referenced. |
 | Check Cast Types | Check if the identifier used in a cast expression is a class name. |
