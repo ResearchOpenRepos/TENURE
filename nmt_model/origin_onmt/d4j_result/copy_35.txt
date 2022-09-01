@@ -1,0 +1,300 @@
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . <unk>
+RemoveBuggyStmt
+MutateOperators1 rank2fixsplit != rank2fixsplit ==
+MutateVariable1 rank2fixsplit dataset rank2fixsplit dataset
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index != null
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset != null
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( dataset . <unk> ) ;
+MutateVariable2 rank2fixsplit dataset rank2fixsplit this . dataset
+InsertMissedStmt3
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index > 0
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( dataset ) ;
+MoveStmt rank2fixsplit 7
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . getRowRenderingOrder
+MoveStmt rank2fixsplit 6
+MoveStmt rank2fixsplit 9
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index != 0
+MoveStmt rank2fixsplit 4
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . <unk>
+MoveStmt rank2fixsplit - 1
+MoveStmt rank2fixsplit 5
+MoveStmt rank2fixsplit 15
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( dataset ) ;
+MoveStmt rank2fixsplit 1
+InsertNullPointerChecker1 rank2fixsplit dataset
+MoveStmt rank2fixsplit 3
+MoveStmt rank2fixsplit 14
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit || rank2fixsplit dataset . <unk>
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset != null
+MoveStmt rank2fixsplit 13
+InsertNullPointerChecker2 rank2fixsplit dataset rank2fixsplit null
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset == null
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . isEmpty ( )
+InsertMissedStmt4 rank2fixsplit dataset . <unk>
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . <unk>
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index == null
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit this
+MoveStmt rank2fixsplit - 2
+MoveStmt rank2fixsplit 8
+MoveStmt rank2fixsplit 12
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit ! dataset . <unk>
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit this . plot
+MoveStmt rank2fixsplit 25
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( dataset . plot ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index >= 0
+MoveStmt rank2fixsplit 23
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( ) ;
+MoveStmt rank2fixsplit 10
+MoveStmt rank2fixsplit 11
+MoveStmt rank2fixsplit 33
+MoveStmt rank2fixsplit 18
+MoveStmt rank2fixsplit 20
+InsertMissedStmt2 rank2fixsplit null
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index == 0
+MutateOperators1 rank2fixsplit != rank2fixsplit !=
+MoveStmt rank2fixsplit 17
+MoveStmt rank2fixsplit 2
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . getIndexOf
+MoveStmt rank2fixsplit - 3
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( this ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit ! index
+MoveStmt rank2fixsplit 16
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . getLegendItems
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . enabled
+MoveStmt rank2fixsplit - 4
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( true ) ;
+InsertMissedStmt1 rank2fixsplit this . getDataset . <unk> ( dataset ) ;
+MoveStmt rank2fixsplit 22
+InsertNullPointerChecker4 rank2fixsplit dataset
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit ! <unk>
+MutateOperators1 rank2fixsplit != rank2fixsplit <
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . plot
+InsertMissedStmt4 rank2fixsplit ! dataset . <unk>
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( index ) ;
+InsertMissedStmt1 rank2fixsplit plot . <unk> ( dataset . <unk> ) ;
+MoveStmt rank2fixsplit 30
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit dataset . plot
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( index ) ;
+MutateVariable1 rank2fixsplit dataset rank2fixsplit CategoryDataset
+InsertMissedStmt2 rank2fixsplit this
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit true
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit <unk>
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( this ) ;
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit null
+MoveStmt rank2fixsplit - 5
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset instanceof <unk>
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index != <unk>
+InsertMissedStmt1 rank2fixsplit this . <unk> . <unk> ( dataset ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . plot
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit index != null
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit dataset . <unk>
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit ( dataset != null )
+MutateMethodInvExpr1 rank2fixsplit if rank2fixsplit <unk>
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . <unk> ( )
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset == null
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit this
+InsertMissedStmt1 rank2fixsplit this . plot . reset ( ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . CategoryDataset
+MoveStmt rank2fixsplit 28
+InsertMissedStmt1 rank2fixsplit plot . <unk> ( dataset ) ;
+InsertMissedStmt4 rank2fixsplit dataset . <unk> == null
+InsertNullPointerChecker5 rank2fixsplit dataset
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . getDataset
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( dataset . getDataset ) ;
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( "STRING" ) ;
+MoveStmt rank2fixsplit 19
+MutateVariable1 rank2fixsplit dataset rank2fixsplit index
+MoveStmt rank2fixsplit 27
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit <unk> != null
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit !=
+InsertMissedStmt1 rank2fixsplit dataset . <unk> . <unk> ( dataset ) ;
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit || rank2fixsplit index != null
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . length > 0
+MutateVariable2 rank2fixsplit dataset rank2fixsplit this
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit true
+InsertMissedStmt1 rank2fixsplit dataset . setContentType ( "STRING" ) ;
+InsertMissedStmt4 rank2fixsplit dataset . <unk> != null
+InsertMissedStmt2 rank2fixsplit dataset
+InsertMissedStmt1 rank2fixsplit result . <unk> ( dataset . <unk> ) ;
+MutateOperators1 rank2fixsplit != rank2fixsplit >
+MutateReturnStmt rank2fixsplit dataset != null rank2fixsplit dataset . <unk>
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . hasFocus
+InsertMissedStmt1 rank2fixsplit this . plot . <unk> ( true ) ;
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . <unk> == null
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . <unk> != null
+MutateVariable2 rank2fixsplit dataset rank2fixsplit this . plot
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index <= 0
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit - 1
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset . <unk> > 0
+MutateDataType1 rank2fixsplit dataset != null rank2fixsplit CategoryDataset
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset . handled
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( "STRING" ) ;
+MoveStmt rank2fixsplit 21
+MoveStmt rank2fixsplit - 6
+MoveStmt rank2fixsplit 31
+InsertMissedStmt4 rank2fixsplit dataset . <unk> > 0
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( dataset . getIndexOf ) ;
+MoveStmt rank2fixsplit - 7
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit this . plot == null
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit index != this
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit dataset
+MutateConditionalExpr2 rank2fixsplit dataset rank2fixsplit this
+MoveStmt rank2fixsplit 34
+MoveStmt rank2fixsplit 24
+InsertMissedStmt1 rank2fixsplit this . plot . clear ( ) ;
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit "STRING"
+InsertMissedStmt4 rank2fixsplit dataset . <unk> ( )
+MoveStmt rank2fixsplit 50
+MoveStmt rank2fixsplit 52
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( false ) ;
+MoveStmt rank2fixsplit <unk>
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit plot . <unk> ( )
+MutateConditionalExpr2 rank2fixsplit dataset rank2fixsplit this . dataset
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit this . plot
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( CategoryDataset ) ;
+MoveStmt rank2fixsplit 0
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit &&
+MoveStmt rank2fixsplit 26
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( null ) ;
+MutateReturnStmt rank2fixsplit dataset != null rank2fixsplit dataset
+MoveStmt rank2fixsplit 32
+InsertMissedStmt2 rank2fixsplit dataset . <unk>
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit this . <unk>
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit ||
+MutateOperators1 rank2fixsplit != rank2fixsplit >=
+MutateDataType2 rank2fixsplit dataset rank2fixsplit CategoryDataset
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit ! <unk>
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit true
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit ==
+MoveStmt rank2fixsplit 40
+MutateDataType1 rank2fixsplit dataset rank2fixsplit CategoryDataset
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit this . plot
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit index == null
+InsertMissedStmt1 rank2fixsplit plot . <unk> ( ) ;
+MutateVariable1 rank2fixsplit dataset rank2fixsplit <unk>
+InsertNullPointerChecker2 rank2fixsplit dataset rank2fixsplit false
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit adjNode
+InsertMissedStmt1 rank2fixsplit result . <unk> ( dataset ) ;
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit CategoryDataset . <unk>
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . clone
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( 0 ) ;
+InsertNullPointerChecker2 rank2fixsplit dataset rank2fixsplit rank2fixempty
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit &&
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit false
+MoveStmt rank2fixsplit 60
+MutateConditionalExpr2 rank2fixsplit dataset rank2fixsplit this . plot
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit &&
+MoveStmt rank2fixsplit 41
+InsertNullPointerChecker2 rank2fixsplit dataset rank2fixsplit 0
+InsertMissedStmt4 rank2fixsplit dataset . <unk> == 0
+MutateConditionalExpr2 rank2fixsplit dataset rank2fixsplit dataset
+MutateMethodInvExpr1 rank2fixsplit if rank2fixsplit appendLong
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit "STRING"
+InsertMissedStmt2 rank2fixsplit result
+MutateConditionalExpr3 rank2fixsplit dataset != null rank2fixsplit && rank2fixsplit true
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit "STRING"
+MutateVariable1 rank2fixsplit dataset rank2fixsplit plot
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit &&
+MutateConditionalExpr2 rank2fixsplit != rank2fixsplit this
+InsertMissedStmt1 rank2fixsplit dataset . requestFocus ( ) ;
+MoveStmt rank2fixsplit 100
+MutateVariable2 rank2fixsplit dataset rank2fixsplit this . this
+MutateVariable2 rank2fixsplit dataset rank2fixsplit this . CategoryDataset
+MoveStmt rank2fixsplit 43
+MoveStmt rank2fixsplit - 10
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset instanceof <unk>
+InsertMissedStmt1 rank2fixsplit result . <unk> ( ) ;
+MoveStmt rank2fixsplit - 8
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit CategoryDataset
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . getId ( )
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit CategoryDataset
+InsertMissedStmt1 rank2fixsplit this . setDaemon ( true ) ;
+MoveStmt rank2fixsplit VERSION
+InsertMissedStmt1 rank2fixsplit plot . <unk> ( this ) ;
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . getClass ( )
+MoveStmt rank2fixsplit - 9
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( 1 ) ;
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit ! isSeriesVisibleInLegend
+InsertMissedStmt4 rank2fixsplit ! dataset . <unk> ( )
+MutateLiteralExpr2 rank2fixsplit null rank2fixsplit this . plot
+InsertMissedStmt4 rank2fixsplit dataset . <unk> ( ) == 0
+InsertMissedStmt4 rank2fixsplit index > 0
+InsertMissedStmt1 rank2fixsplit dataset . reset ( ) ;
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit dataset
+MutateOperators1 rank2fixsplit != rank2fixsplit <=
+InsertMissedStmt1 rank2fixsplit getDataset . <unk> ( dataset ) ;
+MoveStmt rank2fixsplit 38
+InsertMissedStmt2 rank2fixsplit plot
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit this . dataset
+MoveStmt rank2fixsplit InsertMissedStmt1
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit this
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit index != 0
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit false
+InsertMissedStmt4 rank2fixsplit dataset . <unk> ( ) == false
+InsertMissedStmt4 rank2fixsplit dataset . isActive ( )
+InsertMissedStmt2 rank2fixsplit true
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit ||
+MutateDataType2 rank2fixsplit dataset rank2fixsplit dataset < ? >
+InsertMissedStmt4 rank2fixsplit dataset . length > 0
+InsertNullPointerChecker1 rank2fixsplit dataset != null
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit getLegendItems
+InsertMissedStmt1 rank2fixsplit <unk> . <unk> ( dataset ) ;
+InsertMissedStmt2 rank2fixsplit isSeriesVisibleInLegend
+MutateDataType1 rank2fixsplit dataset != null rank2fixsplit <unk>
+InsertMissedStmt2 rank2fixsplit index
+InsertNullPointerChecker1 rank2fixsplit dataset . dataset
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . options
+MutateOperators1 rank2fixsplit != rank2fixsplit .
+InsertMissedStmt1 rank2fixsplit dataset . <unk> ( plot ) ;
+InsertMissedStmt1 rank2fixsplit dataset . commit ( ) ;
+MutateDataType2 rank2fixsplit dataset rank2fixsplit dataset
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit !=
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit null
+MoveStmt rank2fixsplit getTarget
+MutateReturnStmt rank2fixsplit dataset != null rank2fixsplit index
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit - 1
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit getFunctionName
+InsertCastChecker rank2fixsplit dataset rank2fixsplit dataset
+MoveStmt rank2fixsplit 29
+MoveStmt rank2fixsplit ASCENDING
+MutateVariable1 rank2fixsplit dataset rank2fixsplit this
+MoveStmt rank2fixsplit MutateVariable1
+MoveStmt rank2fixsplit - 12
+InsertCastChecker rank2fixsplit dataset rank2fixsplit this
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit index
+MutateReturnStmt rank2fixsplit dataset != null rank2fixsplit result
+InsertMissedStmt4 rank2fixsplit dataset . plot == null
+InsertMissedStmt2 rank2fixsplit this . plot
+MoveStmt rank2fixsplit >=
+MutateMethodInvExpr1 rank2fixsplit if rank2fixsplit wrapSet
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit true
+MoveStmt rank2fixsplit 37
+MutateLiteralExpr2 rank2fixsplit dataset rank2fixsplit this . plot
+InsertNullPointerChecker1 rank2fixsplit dataset . plot
+MoveStmt rank2fixsplit - 11
+MoveStmt rank2fixsplit - 0
+InsertMissedStmt1 rank2fixsplit dataset . invalidate ( ) ;
+MoveStmt rank2fixsplit 53
+MutateMethodInvExpr1 rank2fixsplit dataset rank2fixsplit getIndexOf
+MoveStmt rank2fixsplit 46
+MoveStmt rank2fixsplit 61
+<unk> rank2fixsplit dataset rank2fixsplit this
+MoveStmt rank2fixsplit InsertNullPointerChecker1
+MutateOperators1 rank2fixsplit != rank2fixsplit
+MutateConditionalExpr2 rank2fixsplit null rank2fixsplit dataset
+InsertNullPointerChecker3 rank2fixsplit dataset rank2fixsplit new <unk> ( )
+MutateDataType2 rank2fixsplit dataset rank2fixsplit <unk>
+MutateLiteralExpr1 rank2fixsplit null rank2fixsplit true
+InsertMissedStmt4 rank2fixsplit ! dataset . isEmpty ( )
+MutateConditionalExpr1 rank2fixsplit dataset != null rank2fixsplit dataset
+MoveStmt rank2fixsplit 36
+MoveStmt rank2fixsplit 49
+InsertMissedStmt4 rank2fixsplit dataset . isEnabled ( )
+MutateVariable2 rank2fixsplit dataset rank2fixsplit dataset . dataset
+MutateDataType1 rank2fixsplit dataset rank2fixsplit CategoryDataset < ? >
+InsertMissedStmt4 rank2fixsplit this . plot == null
+MutateConditionalExpr2 rank2fixsplit ) rank2fixsplit ==
+MoveStmt rank2fixsplit 2L
