@@ -5,12 +5,14 @@ if __name__ == "__main__":
 	d4j_version = sys.argv[1]
 	bug_version = sys.argv[2]
 	fl_setting = sys.argv[3]
+	beam_35 = int(sys.argv[4].strip())
+	beam_single = int(sys.argv[5].strip())
 
 	parsed_data_dir = "../parsed_data/d4j_{}/{}/{}/".format(d4j_version, fl_setting, bug_version)
 	out_path = os.path.join(parsed_data_dir, "patch_irs.txt")
 	combine_names = ["combine_35", "combine_single"]
 	copy_names = ["copy_35", "copy_single"]
-	beams = [300, 200]
+	beams = [beam_35, beam_single]
 	final_15 = []
 	final_single = []
 	final_out = []
