@@ -38,7 +38,7 @@ III. Download Dataset
 ---------------------------
 1. Click the following url links and download the necessary data used in this work.
 
-    [fault_localization.tar.gz](https://mega.nz/file/KtwlRDDS#h7f1f2Pr_OD6FgYDryXtMzq-zAkVmqixy55s8Z421lw)
+    [fault_localization.tar.gz](https://mega.nz/file/TxBUCRja#viZeeNhQri0dNDeK9E3-Bca-IgTeqBo9NuTDQWmds1s)
     
     [check_point.tar.gz](https://mega.nz/file/XwJVEZaR#Q2kHln8CQOvgpIY66YKjFfqQcGMC5a3b76j7rQvM7Ec)
     
