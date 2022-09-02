@@ -72,7 +72,7 @@ V. Perform Repair Experiments with Already Trained Models
 
 ```
   <d4j_version>: v1 or v2
-  <dl_setting>: perfect or ochiai
+  <fl_setting>: perfect or ochiai
   <bug_version>: a bug from Defects4J-v1.2 or Defects4J-v2.0 (e.g., Chart_1)
   <beam_all>: the number of reserved patch IRs from 35 artificial fix templates and 1 single-line fix template (default: 500 for perfect and 200 for ochiai)
   <beam_35>: the number of reserved patch IRs from 35 artificial fix template (default: 300 for perfect and 120 for ochiai)
@@ -85,7 +85,7 @@ V. Perform Repair Experiments with Already Trained Models
 ```
 3. Execute `data_process.jar` (must use Java JDK 11).
 ```
-  cd ./scripts/ && java -jar data_process.jar
+  cd ./scripts/ && java -jar data_process.jar <d4j_version> <bug_version> <fl_setting>
 ```
 4. Execute `run.py` (use Java JDK 1.7 or 1.8).
 ```
@@ -97,6 +97,8 @@ V. Perform Repair Experiments with Already Trained Models
   ./patch_validation/patches/partial/: including the patches that can pass part of the test cases.
 ```
 6. Manual check for these patches to judge if they are semantically correct.
+
+* Note: we recommend executing the script `init.py` in `./scripts/` to restore the source code of the bug version to be fixed in Defects4J dataset to the original state.
 
 
 VI. Train New Models to Perform Repair Experiments
@@ -114,6 +116,8 @@ If you want to train new models for repair experiments, the following steps can 
 ```
         
 3. Execute all the commands in Section V.
+
+* Note: gpu options can be edited in the configuration files in `./nmt_model/origin_onmt/train/` to meet the requirements of different operating environments.
 
 
 VIII. Online Appendix
