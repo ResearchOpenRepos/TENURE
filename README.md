@@ -103,7 +103,7 @@
 ### \<2\> More Explanations for 36 (35+1) Fix Templates and The Corresponding Patch IRs.
 
 | No. | Fix Templates | Definitions of Repair Actions | Patch IRs|
-|:------------|:----------|:------------|:----------|
+|:------------:|:----------|:------------|:----------|
 | 1 | Insert Cast Checker 1 | + &emsp; if (***exp*** instanceof ***T***){<br>&emsp;&emsp;&emsp;&emsp; var = (***T***) ***exp*** ; <br> + &emsp; } | ICC1 \<exp\> \<T\> |
 | 2 | Insert Null Pointer Checker 1 | + &emsp; if (***exp*** != null){<br>&emsp;&emsp;&emsp;&emsp; ... ***exp*** ... ;<br> + &emsp;} | INPC1 \<exp\> |
 | 3 | Insert Null Pointer Checker 2 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; return ***default*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC2 \<exp\> \<default\> |
@@ -124,9 +124,9 @@
 | 18 | Mutate Class Instance Creation 1 |&emsp;&emsp;public Object clone(){ <br> - &emsp;&emsp;&emsp; ... new T() ; <br> + &emsp;&emsp;&emsp;  (T) super.clone() <br>&emsp;&emsp; } | MCIC1 |
 | 19 | Mutate Data Type 1 | - &emsp; ***T1*** var ... ; <br> + &emsp;***T2*** var ... ; | MDT1 \<T1\> \<T2\> |
 | 20 | Mutate Data Type 2 | - &emsp; ... (***T1***) exp ... ; <br> + &emsp;... (***T2***) exp ... ; | MDT2 \<T1\> \<T2\> |
-| 21 | Mutate Integer Division Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
-| 22 | Mutate Integer Division Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
-| 23 | Mutate Integer Division Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
+| 21 | Mutate Integer Division <br> Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
+| 22 | Mutate Integer Division <br> Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
+| 23 | Mutate Integer Division <br> Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
 | 24 | Mutate Literal Expression 1 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***literal2*** ... | MDT1 \<T1\> \<T2\> | MLE1 \<literal1\> \<literal2\> |
 | 25 | Mutate Literal Expression 2 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***exp*** ... | MLE2 \<literal1\> \<exp\> |
 | 26 | Mutate Method Invocation Expression 1 | - &emsp; ... ***method1***(args) ... <br> + &emsp;... ***method2***(args) ... | MMIE1 \<method1\> \<method2\> |
