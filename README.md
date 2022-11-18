@@ -99,6 +99,14 @@
 | Time_7 | &#10004; |  |  |
 | **Sum** |  **62** |  **32** |  **79** |
 
+We use the symbol $\cap$ for union and $\cup$ for intersection, and S indicates the set of fixed bugs. 
+
+From the table, suppose ***S1 = S(TBar) $\cap$ S(TENURE), S2 = S(NMT) $\cap$ S(TENURE), S3 = S1 $\cup$ S2, S4 = S(TENURE) - S3***, the numbers of bugs in these sets are as follows:
+
+***\#(S1) = 51, &emsp;&emsp; \#(S2) = 28, &emsp;&emsp; \#(S3) = 64, &emsp;&emsp; \#(S4) = 15.***
+
+Therefore, 64 fixed bugs are contributed by template-based and NMT-based components, while ***15 bugs benefit from the combination method implemented in TENURE***. 
+
 
 ### \<2\> More Explanations for 36 (35+1) Fix Templates and The Corresponding Patch IRs.
 
