@@ -109,7 +109,7 @@
 | 3 | Insert Null Pointer Checker 2 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; return ***default*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC2 \<exp\> \<default\> |
 | 4 | Insert Null Pointer Checker 3 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; ***exp*** = ***exp1*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC3 \<exp\> \<exp1\> |
 | 5 | Insert Null Pointer Checker 4 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; continue ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC4 \<exp\> |
-| 6 | Insert Null Pointer Checker 5 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; throw new IllegalArgumentException(...) ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC5 \<exp\> |
+| 6 | Insert Null Pointer Checker 5 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; throw new <br> + &emsp;&emsp;&emsp;&emsp;&emsp; IllegalArgumentException(...) ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC5 \<exp\> |
 | 7 | Insert Range Checker 1 | + &emsp; if (***index*** &lt; ***exp***.length){<br>&emsp;&emsp;&emsp;&emsp; ... ***exp***\[***index***\] ... ; <br> + &emsp; } | IRC1 \<exp\> \<index\> |
 | 8 | Insert Range Checker 2 | + &emsp; if (***index*** &lt; ***exp***.size()){<br>&emsp;&emsp;&emsp;&emsp; ... ***exp***.get(***index***) ... ; <br> + &emsp; } | IRC2 \<exp\> \<index\> |
 | 9 | Insert Missed Statement 1 | + &emsp; ***expression_statement*** ; | IMS1 \<expression_statement\> |
@@ -118,15 +118,15 @@
 | 12 | Insert Missed Statement 4 | + &emsp; if (***conditional_exp***){<br>&emsp;&emsp;&emsp;&emsp; statement ; ... <br> + &emsp; } | IMS4 \<conditional_exp\> |
 | 13 | Remove Buggy Statement 1 | &emsp;&emsp;...... <br> - &emsp; statement ; <br>&emsp;&emsp;...... | RBS1 |
 | 14 | Move Statement 1 | - &emsp; statement ; <br>&emsp;&emsp;......(***move_step***) <br>+ &emsp;statement ;| MS1 \<move_step\> |
-| 15 | Mutate Conditional <br> Expression 1 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr2*** ... ; | MCE1 \<cExp1\> \<cExp2\> |
-| 16 | Mutate Conditional <br> Expression 2 | - &emsp; ... cExpr1 ***op*** ***cExpr2*** ... ; <br> + &emsp;... cExpr1 ... ; | MCE2 \<op\> \<cExp2\> |
-| 17 | Mutate Conditional <br> Expression 3 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr1*** ***op*** ***cExpr2*** ... ; | MCE3 \<cExp1\> \<op\> \<cExp2\> |
-| 18 | Mutate Class Instance <br> Creation 1 |&emsp;&emsp;public Object clone(){ <br> - &emsp;&emsp;&emsp; ... new T() ; <br> + &emsp;&emsp;&emsp;  (T) super.clone() <br>&emsp;&emsp; } | MCIC1 |
+| 15 | Mutate Conditional Expression 1 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr2*** ... ; | MCE1 \<cExp1\> \<cExp2\> |
+| 16 | Mutate Conditional Expression 2 | - &emsp; ... cExpr1 ***op*** ***cExpr2*** ... ; <br> + &emsp;... cExpr1 ... ; | MCE2 \<op\> \<cExp2\> |
+| 17 | Mutate Conditional Expression 3 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr1*** ***op*** ***cExpr2*** ... ; | MCE3 \<cExp1\> \<op\> \<cExp2\> |
+| 18 | Mutate Class Instance Creation 1 |&emsp;&emsp;public Object clone(){ <br> - &emsp;&emsp;&emsp; ... new T() ; <br> + &emsp;&emsp;&emsp;(T) super.clone() <br>&emsp;&emsp; } | MCIC1 |
 | 19 | Mutate Data Type 1 | - &emsp; ***T1*** var ... ; <br> + &emsp;***T2*** var ... ; | MDT1 \<T1\> \<T2\> |
 | 20 | Mutate Data Type 2 | - &emsp; ... (***T1***) exp ... ; <br> + &emsp;... (***T2***) exp ... ; | MDT2 \<T1\> \<T2\> |
-| 21 | Mutate Integer Division <br> Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
-| 22 | Mutate Integer Division <br> Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
-| 23 | Mutate Integer Division <br> Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
+| 21 | Mutate Integer Division Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
+| 22 | Mutate Integer Division Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
+| 23 | Mutate Integer Division Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
 | 24 | Mutate Literal Expression 1 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***literal2*** ... | MDT1 \<T1\> \<T2\> | MLE1 \<literal1\> \<literal2\> |
 | 25 | Mutate Literal Expression 2 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***exp*** ... | MLE2 \<literal1\> \<exp\> |
 | 26 | Mutate Method Invocation Expression 1 | - &emsp; ... ***method1***(args) ... <br> + &emsp;... ***method2***(args) ... | MMIE1 \<method1\> \<method2\> |
