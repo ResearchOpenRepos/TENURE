@@ -4,7 +4,7 @@
 
 ### \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
 
-| Bug Versions | Template-based Component <br> (TBar)| NMT-based Component <br> (LSTM-based Encoder-Decoder <br> with Copy Mechanism)| After Combination <br> (TENURE) |
+| Bug Versions | Template-based Component <br> (TBar)| NMT-based Component <br> (LSTM-based Encoder-Decoder with Copy Mechanism)| After Combination <br> (TENURE) |
 |:------------|:----------:|:------------:|:----------:|
 | Closure_10 | &#10004; |  |  |
 | Closure_101 |  |  | &#10004; |
