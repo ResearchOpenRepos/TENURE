@@ -99,9 +99,13 @@
 | Time_7 | &#10004; |  |  |
 | **Sum** |  **62** |  **32** |  **79** |
 
-We use the symbol $\cap$ for union and $\cup$ for intersection, and S indicates the set of fixed bugs. 
+We use the symbol V for union and &Lambda; for intersection, and S indicates the set of fixed bugs. 
 
-From the table, suppose ***S1 = S(TBar) $\cap$ S(TENURE), S2 = S(NMT) $\cap$ S(TENURE), S3 = S1 $\cup$ S2, S4 = S(TENURE) - S3***, the numbers of bugs in these sets are as follows:
+From the table, suppose
+
+***S1 = S(TBar) &Lambda; S(TENURE), &emsp; S2 = S(NMT) &Lambda; S(TENURE), &emsp; S3 = S1 V S2, &emsp; S4 = S(TENURE) - S3***,
+
+the numbers of bugs in these sets are as follows:
 
 ***\#(S1) = 51, &emsp;&emsp; \#(S2) = 28, &emsp;&emsp; \#(S3) = 64, &emsp;&emsp; \#(S4) = 15.***
 
