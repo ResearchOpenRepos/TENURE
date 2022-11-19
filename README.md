@@ -107,7 +107,7 @@ the numbers of bugs in these sets are as follows:
 
 ***\#(S1) = 51, &emsp;&emsp; \#(S2) = 28, &emsp;&emsp; \#(S3) = 64, &emsp;&emsp; \#(S4) = 15.***
 
-Therefore, 64 fixed bugs are contributed by template-based and NMT-based components, while ***15 bugs benefit from the combination method implemented in TENURE***. 
+Therefore, 64 fixed bugs are contributed by template-based and NMT-based components, while ***15 bugs benefit from <br> the combination method implemented in TENURE***. 
 
 ---
 
