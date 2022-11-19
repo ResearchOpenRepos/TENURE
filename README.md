@@ -2,7 +2,7 @@
 
 ## New!
 
-## \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
+## \<1\> Experimental Results of TENURE Compared with Its Template-based <br> and NMT-based Components on Defects4J-v1.2 under Perfect Localization
 
 | Bug Versions | Template-based Component <br> (TBar)| NMT-based Component <br> (LSTM-based Encoder-Decoder <br> with Copy Mechanism)| After Combination <br> (TENURE) |
 |:------------|:----------:|:------------:|:----------:|
@@ -154,6 +154,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 | 35 | Mutate <br> Variable 2 | - &emsp; ... ***var1*** ... <br> + &emsp;... ***exp*** ... | MV2 \<var1\> \<exp\> |
 | 36 | Mutate <br> Single Line | - &emsp; before_statement ; <br> + &emsp;***after_statement*** ; | MSL \<after_statement\> |
 
+---
 
 I. Requirements
 --------------------
