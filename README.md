@@ -116,7 +116,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 
 | No. | Fix Templates | Definitions of Repair Actions | Patch IRs|
 |:------------:|:----------|:------------|:----------|
-| 1 | Insert <br> Cast <br> Checker <br> 1 | + &emsp; if (***exp*** instanceof ***T***){<br>&emsp;&emsp;&emsp;&emsp; var = (***T***) ***exp*** ; <br> + &emsp; } | ICC1 \<exp\> \<T\> |
+| 1 | Insert Cast <br> Checker 1 | + &emsp; if (***exp*** instanceof ***T***){<br>&emsp;&emsp;&emsp;&emsp; var = (***T***) ***exp*** ; <br> + &emsp; } | ICC1 \<exp\> \<T\> |
 | 2 | Insert Null Pointer <br> Checker 1 | + &emsp; if (***exp*** != null){<br>&emsp;&emsp;&emsp;&emsp; ... ***exp*** ... ;<br> + &emsp; } | INPC1 \<exp\> |
 | 3 | Insert Null Pointer <br> Checker 2 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; return ***default*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC2 \<exp\> \<default\> |
 | 4 | Insert Null Pointer <br> Checker 3 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; ***exp*** = ***exp1*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC3 \<exp\> \<exp1\> |
@@ -130,28 +130,28 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 | 12 | Insert Missed <br> Statement 4 | + &emsp; if (***conditional_exp***){<br>&emsp;&emsp;&emsp;&emsp; statement ; ... <br> + &emsp; } | IMS4 \<conditional_exp\> |
 | 13 | Remove Buggy <br> Statement 1 | &emsp;&emsp;...... <br> - &emsp; statement ; <br>&emsp;&emsp;...... | RBS1 |
 | 14 | Move Statement 1 | - &emsp; statement ; <br>&emsp;&emsp;......(***move_step***) <br>+ &emsp;statement ;| MS1 \<move_step\> |
-| 15 | Mutate Conditional <br> Expression 1 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr2*** ... ; | MCE1 \<cExp1\> \<cExp2\> |
-| 16 | Mutate Conditional <br> Expression 2 | - &emsp; ... cExpr1 ***op*** ***cExpr2*** ... ; <br> + &emsp;... cExpr1 ... ; | MCE2 \<op\> \<cExp2\> |
-| 17 | Mutate Conditional <br> Expression 3 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr1*** ***op*** ***cExpr2*** ... ; | MCE3 \<cExp1\> \<op\> \<cExp2\> |
-| 18 | Mutate Class Instance <br> Creation 1 |&emsp;&emsp;public Object clone(){ <br> - &emsp;&emsp;&emsp; ... new T() ; <br> + &emsp;&emsp;&emsp;(T) super.clone() ; <br>&emsp;&emsp; } | MCIC1 |
+| 15 | Mutate <br> Conditional <br> Expression 1 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr2*** ... ; | MCE1 \<cExp1\> \<cExp2\> |
+| 16 | Mutate <br> Conditional <br> Expression 2 | - &emsp; ... cExpr1 ***op*** ***cExpr2*** ... ; <br> + &emsp;... cExpr1 ... ; | MCE2 \<op\> \<cExp2\> |
+| 17 | Mutate <br> Conditional <br> Expression 3 | - &emsp; ... ***cExpr1*** ... ; <br> + &emsp;... ***cExpr1*** ***op*** ***cExpr2*** ... ; | MCE3 \<cExp1\> \<op\> \<cExp2\> |
+| 18 | Mutate <br> Class Instance <br> Creation 1 |&emsp;&emsp;public Object clone(){ <br> - &emsp;&emsp;&emsp; ... new T() ; <br> + &emsp;&emsp;&emsp;(T) super.clone() ; <br>&emsp;&emsp; } | MCIC1 |
 | 19 | Mutate Data <br> Type 1 | - &emsp; ***T1*** var ... ; <br> + &emsp;***T2*** var ... ; | MDT1 \<T1\> \<T2\> |
 | 20 | Mutate Data <br> Type 2 | - &emsp; ... (***T1***) exp ... ; <br> + &emsp;... (***T2***) exp ... ; | MDT2 \<T1\> \<T2\> |
-| 21 | Mutate Integer <br> Division Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
-| 22 | Mutate Integer <br> Division Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
-| 23 | Mutate Integer <br> Division Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
+| 21 | Mutate Integer <br> Division <br> Operation 1 | - &emsp; ... dividend / ***divisor*** ... <br> + &emsp;... dividend / (double or float) ***divisor*** ... | MIDO1 \<divisor\> |
+| 22 | Mutate Integer <br> Division <br> Operation 2 | - &emsp; ... ***dividend*** / divisor ... <br> + &emsp;... (double or float) ***dividend*** / divisor ... | MIDO2 \<dividend\> |
+| 23 | Mutate Integer <br> Division <br> Operation 3 | - &emsp; ... ***dividend*** / ***divisor*** ... <br> + &emsp;... (1.0 / ***divisor***) \* ***dividend*** ... | MIDO3 \<dividend\> \<divisor\> |
 | 24 | Mutate Literal <br> Expression 1 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***literal2*** ... | MLE1 \<literal1\> \<literal2\> |
 | 25 | Mutate Literal <br> Expression 2 | - &emsp; ... ***literal1*** ... <br> + &emsp;... ***exp*** ... | MLE2 \<literal1\> \<exp\> |
-| 26 | Mutate Method <br> Invocation Expression 1 | - &emsp; ... ***method1***(args) ... <br> + &emsp;... ***method2***(args) ... | MMIE1 \<method1\> \<method2\> |
-| 27 | Mutate Method <br> Invocation Expression 2 | - &emsp; ... method1(arg1, ***arg2***, ***arg3***, ...) ... <br> + &emsp;... method1(arg1, ***arg4***, ***arg5***, ...) ... | MMIE2 \<\[arg2, arg3\]\> \<\[arg4, arg5\]\> |
-| 28 | Mutate Method <br> Invocation Expression 3 | - &emsp; ... method1(arg1, ***arg2***, ***arg3***, ...) ... <br> + &emsp;... method1(arg1, ...) ... | MMIE3 \<\[arg2, arg3\]\> |
-| 29 | Mutate Method <br> Invocation Expression 4 | - &emsp; ... method1(***arg2***, ***arg4***, ...) ... <br> + &emsp;... method1(***arg1***, ***arg2***, ***arg3***, ***arg4***, ...) ... | MMIE4 \<\[arg2, arg4\]\> \<\[arg1, arg3\]\>|
-| 30 | Mutate Operators 1 | - &emsp; ... exp1 ***op1*** exp2 ... <br> + &emsp;... exp1 ***op2*** exp2 ... | MO1 \<op1\> \<op2\> |
-| 31 | Mutate Operators 2 | - &emsp; ... (***exp1 op1 exp2***) op2 exp3 ... <br> + &emsp;...exp1 op1 (***exp2 op2 exp3***) ... | MO2 \<exp1 op1 exp2\> \<exp2 op2 exp3\> |
-| 32 | Mutate Operators 3 | - &emsp; ... ***exp*** instanceof ***T*** ... <br> + &emsp;... ***exp*** != null ... | MO3 \<exp\> \<T\> |
+| 26 | Mutate Method <br> Invocation <br> Expression 1 | - &emsp; ... ***method1***(args) ... <br> + &emsp;... ***method2***(args) ... | MMIE1 \<method1\> \<method2\> |
+| 27 | Mutate Method <br> Invocation <br> Expression 2 | - &emsp; ... method1(arg1, ***arg2***, ***arg3***, ...) ... <br> + &emsp;... method1(arg1, ***arg4***, ***arg5***, ...) ... | MMIE2 \<\[arg2, arg3\]\> \<\[arg4, arg5\]\> |
+| 28 | Mutate Method <br> Invocation <br> Expression 3 | - &emsp; ... method1(arg1, ***arg2***, ***arg3***, ...) ... <br> + &emsp;... method1(arg1, ...) ... | MMIE3 \<\[arg2, arg3\]\> |
+| 29 | Mutate Method <br> Invocation <br> Expression 4 | - &emsp; ... method1(***arg2***, ***arg4***, ...) ... <br> + &emsp;... method1(***arg1***, ***arg2***, ***arg3***, ***arg4***, ...) ... | MMIE4 \<\[arg2, arg4\]\> \<\[arg1, arg3\]\>|
+| 30 | Mutate <br> Operators 1 | - &emsp; ... exp1 ***op1*** exp2 ... <br> + &emsp;... exp1 ***op2*** exp2 ... | MO1 \<op1\> \<op2\> |
+| 31 | Mutate <br> Operators 2 | - &emsp; ... (***exp1 op1 exp2***) op2 exp3 ... <br> + &emsp;...exp1 op1 (***exp2 op2 exp3***) ... | MO2 \<exp1 op1 exp2\> \<exp2 op2 exp3\> |
+| 32 | Mutate <br> Operators 3 | - &emsp; ... ***exp*** instanceof ***T*** ... <br> + &emsp;... ***exp*** != null ... | MO3 \<exp\> \<T\> |
 | 33 | Mutate Return <br> Statement 1 | - &emsp; return ***exp1*** ; <br> + &emsp;return ***exp2*** ; | MRS1 \<exp1\> \<exp2\> |
 | 34 | Mutate Variable 1 | - &emsp; ... ***var1*** ... <br> + &emsp;... ***var2*** ... | MV1 \<var1\> \<var2\> |
 | 35 | Mutate Variable 2 | - &emsp; ... ***var1*** ... <br> + &emsp;... ***exp*** ... | MV2 \<var1\> \<exp\> |
-| 36 | Mutate Single Line | - &emsp; before_statement ; <br> + &emsp;***after_statement*** ; | MSL \<after_statement\> |
+| 36 | Mutate <br> Single Line | - &emsp; before_statement ; <br> + &emsp;***after_statement*** ; | MSL \<after_statement\> |
 
 
 I. Requirements
