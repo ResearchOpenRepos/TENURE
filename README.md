@@ -2,7 +2,7 @@
 
 ## New!
 
-### \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
+## \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
 
 | Bug Versions | Template-based Component <br> (TBar)| NMT-based Component <br> (LSTM-based Encoder-Decoder <br> with Copy Mechanism)| After Combination <br> (TENURE) |
 |:------------|:----------:|:------------:|:----------:|
@@ -111,8 +111,9 @@ the numbers of bugs in these sets are as follows:
 
 Therefore, 64 fixed bugs are contributed by template-based and NMT-based components, while ***15 bugs benefit from the combination method implemented in TENURE***. 
 
+---
 
-### \<2\> More Explanations for 36 (35+1) Fix Templates and The Corresponding Patch IRs.
+## \<2\> More Explanations for 36 (35+1) Fix Templates and The Corresponding Patch IRs.
 
 | No. | Fix Templates | Definitions of Repair Actions | Patch IRs|
 |:------------:|:----------|:------------|:----------|
