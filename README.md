@@ -116,7 +116,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 
 | No. | Fix Templates | Definitions of Repair Actions | Patch IRs|
 |:------------:|:----------|:------------|:----------|
-| 1 | Insert Cast <br> Checker 1 | + &emsp; if (***exp*** instanceof ***T***){<br>&emsp;&emsp;&emsp;&emsp; var = (***T***) ***exp*** ; <br> + &emsp; } | ICC1 \<exp\> \<T\> |
+| 1 | Insert <br> Cast <br> Checker <br> 1 | + &emsp; if (***exp*** instanceof ***T***){<br>&emsp;&emsp;&emsp;&emsp; var = (***T***) ***exp*** ; <br> + &emsp; } | ICC1 \<exp\> \<T\> |
 | 2 | Insert Null Pointer <br> Checker 1 | + &emsp; if (***exp*** != null){<br>&emsp;&emsp;&emsp;&emsp; ... ***exp*** ... ;<br> + &emsp; } | INPC1 \<exp\> |
 | 3 | Insert Null Pointer <br> Checker 2 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; return ***default*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC2 \<exp\> \<default\> |
 | 4 | Insert Null Pointer <br> Checker 3 | + &emsp; if (***exp*** == null)<br>+ &emsp;&emsp;&emsp; ***exp*** = ***exp1*** ; <br>&emsp;&emsp; ... ***exp*** ... ; | INPC3 \<exp\> \<exp1\> |
