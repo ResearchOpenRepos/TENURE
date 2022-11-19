@@ -146,7 +146,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 | 28 | Mutate Method <br> Invocation <br> Expression 3 | - &emsp; ... method1(arg1, ***arg2***, ***arg3***, ...) ... <br> + &emsp;... method1(arg1, ...) ... | MMIE3 \<\[arg2, arg3\]\> |
 | 29 | Mutate Method <br> Invocation <br> Expression 4 | - &emsp; ... method1(***arg2***, ***arg4***, ...) ... <br> + &emsp;... method1(***arg1***, ***arg2***, ***arg3***, ***arg4***, ...) ... | MMIE4 \<\[arg2, arg4\]\> \<\[arg1, arg3\]\>|
 | 30 | Mutate <br> Operators 1 | - &emsp; ... exp1 ***op1*** exp2 ... <br> + &emsp;... exp1 ***op2*** exp2 ... | MO1 \<op1\> \<op2\> |
-| 31 | Mutate <br> Operators 2 | - &emsp; ... (***exp1 op1 exp2***) op2 exp3 ... <br> + &emsp; ...exp1 op1 (***exp2 op2 exp3***) ... | MO2 \<exp1 op1 exp2\> \<exp2 op2 exp3\> |
+| 31 | Mutate <br> Operators 2 | - &emsp; ... (***exp1 op1 exp2***) op2 exp3 ... <br> + &emsp;... exp1 op1 (***exp2 op2 exp3***) ... | MO2 \<exp1 op1 exp2\> \<exp2 op2 exp3\> |
 | 32 | Mutate <br> Operators 3 | - &emsp; ... ***exp*** instanceof ***T*** ... <br> + &emsp;... ***exp*** != null ... | MO3 \<exp\> \<T\> |
 | 33 | Mutate Return <br> Statement 1 | - &emsp; return ***exp1*** ; <br> + &emsp;return ***exp2*** ; | MRS1 \<exp1\> \<exp2\> |
 | 34 | Mutate <br> Variable 1 | - &emsp; ... ***var1*** ... <br> + &emsp;... ***var2*** ... | MV1 \<var1\> \<var2\> |
