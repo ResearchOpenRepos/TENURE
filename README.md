@@ -1,6 +1,6 @@
 # TENURE (Template-based Neural Program Repair)
 
-## New! \<1\> and \<2\>
+## New! \<1\> \<2\> and \<3\>
 
 ## \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
 
@@ -156,7 +156,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 
 ## \<3\> Top-2000 Java Projects Used in TENURE.
 
-After careful checking, 8 projects appeared in both Top-2000 projects and Defects4J (v1.2 & v2.0) dataset, so the remaining 1992 projects are used in TENURE, which are listed in the file `top-2000-projects.txt`.
+After careful checking, 8 projects appeared in both Top-2000 projects and Defects4J (v1.2 & v2.0) dataset, so the remaining 1992 projects are used in TENURE, which are listed in the file `[top-2000-projects.txt](https://github.com/ResearchOpenRepos/TENURE/blob/master/top-2000-projects.txt)`.
 
 ---
 
