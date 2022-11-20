@@ -156,7 +156,7 @@ Therefore, 64 fixed bugs are contributed by template-based and NMT-based compone
 
 ## \<3\> Top-2000 Java Projects Used in TENURE.
 
-After careful checking, 8 projects appeared in both Top-2000 projects and Defects4J (v1.2 & v2.0) dataset, so the remaining 1992 projects are used in TENURE, which are listed in the file [top-2000-projects.txt](https://github.com/ResearchOpenRepos/TENURE/blob/master/top-2000-projects.txt).
+After careful checking, 8 projects exist in both Top-2000 projects and Defects4J (v1.2 & v2.0) dataset, so the remaining 1992 projects are used in TENURE, which are listed in the file [top-2000-projects.txt](https://github.com/ResearchOpenRepos/TENURE/blob/master/top-2000-projects.txt).
 
 ---
 
