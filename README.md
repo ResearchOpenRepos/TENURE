@@ -1,8 +1,8 @@
 # TENURE (Template-based Neural Program Repair)
 
-## New!
+## New! \<1\> and \<2\>
 
-## \<1\> Experimental Results of TENURE Compared with Its Template-based and <br> NMT-based Components on Defects4J-v1.2 under Perfect Localization
+## \<1\> Experimental Results of TENURE Compared with Its Template-based and NMT-based Components on Defects4J-v1.2 under Perfect Localization
 
 | Bug Versions | Template-based Component <br> (TBar)| NMT-based Component <br> (LSTM-based Encoder-Decoder <br> with Copy Mechanism)| After Combination <br> (TENURE) |
 |:------------|:----------:|:------------:|:----------:|
